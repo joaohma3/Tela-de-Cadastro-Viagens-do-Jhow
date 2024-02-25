@@ -1,0 +1,158 @@
+*VERSÃO MÓVEL*/
+@media screen e ( largura máxima :  1040 px ) {
+    . contente {
+        largura :  100 % ;
+        altura :  100 % ;
+    }
+
+    . conteúdo :: antes de {
+        largura :  100 % ;
+        altura :  40 % ;
+        topo :  0 ;
+        raio da borda :  0 ;
+    }
+    . primeiro conteúdo , . segundo conteúdo {
+        direção flexível : coluna;
+        justificar-conteúdo : espaço ao redor;
+    }
+
+    . primeira coluna , . segunda coluna {
+        largura :  100 % ;
+    }
+
+    . entrar-js . conteúdo :: antes de {
+        topo :  60 % ;
+        esquerda :  0 ;
+        raio da borda :  0 ;
+
+    }
+
+    . forma {
+        largura :  90 % ;
+    }
+
+    /* ANIMAÇÃO MOBILE CSS*/
+
+    @keyframes deslocamentoEsq {
+
+        de {
+            topo :  0 ;
+            opacidade :  1 ;
+            índice z :  12 ;
+        }
+
+        25 % {
+            superior :  -80 px ;
+            opacidade :  0,5 ;
+            /* índice z: 12; NÃO HÁ NECESSIDADE */
+        }
+
+        50 % {
+            superior :  -100 px ;
+            opacidade :  0,2 ;
+            /* índice z: 12; NÃO HÁ NECESSIDADE */
+        }
+
+        para {
+            superior :  -110 px ;
+            opacidade :  0 ;
+            índice z :  -1 ;
+        }
+    }
+
+
+    @keyframes deslocamentoDir {
+
+        de {
+            topo :  0 ;
+            índice z :  12 ;
+        }
+
+        25 % {
+            superior :  80px ; _
+            /* índice z: 12; NÃO HÁ NECESSIDADE*/
+        }
+
+        50 % {
+            superior :  100px ; _
+            /* índice z: 12; NÃO HÁ NECESSIDADE*/
+            /* cor de fundo: amarelo; Exemplo que dei no vídeo*/
+        }
+
+        para {
+            superior :  110px ; _
+            índice z :  -1 ;
+        }
+    }
+
+
+
+    @keyframes slidein {
+
+        de {
+            topo :  0 ;
+            altura :  40 % ;
+        }
+
+        25 % {
+            top 5 %  ; _
+            altura :  50 % ;
+        }
+
+        50 % {
+            topo :  25 % ;
+            altura :  60 % ;
+        }
+
+        75 % {
+            topo :  45 % ;
+            altura :  50 % ;
+        }
+
+        para {
+            topo :  60 % ;
+            altura :  40 % ;
+        }
+    }
+
+    slideout de @keyframes {
+
+        de {
+            topo :  60 % ;
+            altura :  40 % ;
+        }
+
+        25 % {
+            topo :  45 % ;
+            altura :  50 % ;
+        }
+
+        50 % {
+            topo :  25 % ;
+            altura :  60 % ;
+        }
+
+        75 % {
+            top 5 %  ; _
+            altura :  50 % ;
+        }
+
+        para {
+            topo :  0 ;
+            altura :  40 % ;
+        }
+    }
+
+}
+
+@media screen e ( largura máxima :  740 px ) {
+    . forma {
+        largura :  50 % ;
+    }
+}
+
+@media screen e ( largura máxima :  425 px ) {
+    . forma {
+        largura :  100 % ;
+    }
+}
