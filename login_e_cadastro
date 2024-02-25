@@ -156,3 +156,256 @@
         largura :  100 % ;
     }
 }
+
+
+{
+margem: 0;
+preenchimento: 0;
+dimensionamento de caixa: caixa de borda;
+}
+corpo {
+família de fontes: 'Open Sans', sans-serif;
+}
+.container {
+display: flex;
+justificar-conteúdo: centro;
+alinhar itens: centro;
+altura: 100vh;
+cor de fundo: #ecf0f1;
+}
+.content primeiro conteúdo {
+largura: 100px;
+altura: 100px;
+alinhar itens: justificar;
+margem: 0 automático;
+}
+.content {
+cor de fundo: #fff;
+raio da borda: 15px;
+largura: 960px;
+altura: 50%;
+justificar-conteúdo: espaço entre;
+alinhar itens: centro;
+posição: relativa;
+}
+.content::before {
+content: "";
+posição: absoluta;
+cor de fundo: #58af9b;
+largura: 50%;
+altura: 100%;
+raio superior esquerdo da borda: 15px;
+raio inferior esquerdo da borda: 15px;
+
+left: 0;
+}
+.title {
+tamanho da fonte: 28px;
+intensidade da fonte: Negrito;
+transformação de texto: capitalizar;
+alinhar itens: centro;
+}
+.title-primary {
+cor: #fff;
+}
+.title .title-second{
+align-items: justificar;
+alinhamento de texto: centro;
+}
+.title-second {
+cor: #58af9b;
+}
+.descrição {
+tamanho da fonte: 14px;
+peso da fonte: 300;
+altura da linha: 30px;
+}
+.descrição-primary {
+cor: #fff;
+}
+.descrição-segundo {
+cor: #7f8c8d;
+}
+.btn {
+raio da borda: 15px;
+transformação de texto: maiúscula;
+cor: #fff;
+tamanho da fonte: 10px;
+preenchimento: 10px 50px;
+cursor: ponteiro;
+intensidade da fonte: Negrito;
+largura: 150px;
+alinhar-se: centro;
+fronteira: nenhuma;
+margem superior: 1rem;
+}
+.btn-primary {
+cor de fundo: transparente;
+borda: 1px sólido #fff;
+transição: cor de fundo 0,5s;
+}
+.btn-primary:hover {
+cor de fundo: #fff;
+cor: #58af9b;
+}
+.btn-second {
+cor de fundo: #58af9b;
+borda: 1px sólido #58af9b;
+transição: cor de fundo 0,5s;
+}
+.btn-second:hover {
+cor de fundo: #fff;
+borda: 1px sólido #58af9b;
+cor: #58af9b;
+}
+.first-content {
+display: flex;
+alinhar itens: centro;
+}
+.primeiro conteúdo .segunda coluna {
+índice z: 11;
+}
+.primeira coluna {
+alinhamento de texto: centro;
+largura: 40%;
+índice z: 10;
+}
+.segunda coluna {
+largura: 60%;
+exibição: flexível;
+direção flexível: coluna;
+alinhar itens: centro;
+}
+.social-media {
+margem: 1rem 0;
+}
+.link-social-media:not(:first-child){
+margem esquerda: 10px;
+}
+.link-social-media .item-social-media {
+transição: cor de fundo .5s;
+}
+.link-social-media:hover .item-social-media{
+cor de fundo: #58af9b;
+cor: #fff;
+cor da borda: #58af9b;
+}
+.list-social-media {
+display: flex;
+tipo de estilo de lista: nenhum;
+}
+.item-social-media {
+borda: 1px sólido #bdc3c7;
+raio da fronteira: 50%;
+largura: 35px;
+altura: 35px;
+altura da linha: 35px;
+alinhamento de texto: centro;
+alinhar itens: centro;
+cor: #95a5a6;
+}
+.form {
+exibição: flex;
+direção flexível: coluna;
+largura: 55%;
+}
+.form entrada {
+altura: 45px;
+largura: 100%;
+fronteira: nenhuma;
+cor de fundo: #ecf0f1;
+}
+input:-webkit-autofill
+{
+-webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inserção !importante;
+-webkit-text-fill-color: #000 !importante;
+}
+.label-input {
+cor de fundo: #ecf0f1;
+exibição: flexível;
+alinhar itens: centro;
+margem: 8px;
+}
+.icon-modify {
+cor: #7f8c8d;
+preenchimento: 0 5px;
+}
+
+/* segundo conteúdo*/
+
+.second-content {
+posição: absoluto;
+exibição: flexível;
+}
+.segundo conteúdo .primeira coluna {
+ordem: 2;
+índice z: -1;
+}
+.second-content .second-column {
+ordem: 1;
+índice z: -1;
+}
+.senha {
+cor: #34495e;
+tamanho da fonte: 14px;
+margem: 15px 0;
+alinhamento de texto: centro;
+}
+.password::first-letter {
+text-transform: capitalize;
+}
+
+.sign-in-js .primeiro conteúdo .primeira coluna {
+índice z: -1;
+}
+
+.sign-in-js .second-content .second-column {
+z-index: 11;
+}
+.sign-in-js .segundo conteúdo .primeira coluna {
+índice z: 13;
+}
+
+.sign-in-js .content::before {
+esquerda: 60%;
+raio superior esquerdo da borda: 0;
+raio inferior esquerdo da borda: 0;
+raio superior direito da borda: 15px;
+raio inferior direito da borda: 15px;
+animação: slide em 1,5s; / MODIFIQUEI DE 3s PARA 1.3s /
+
+z-index: 12;
+}
+
+.sign-up-js .content::before {
+animação: slideout 1,5s; / MODIFIQUEI DE 3s PARA 1.3s /
+
+z-index: 12;
+}
+
+.sign-up-js .segundo conteúdo .primeira coluna,
+.sign-up-js .segundo conteúdo .segunda coluna {
+índice z: -1;
+}
+
+.sign-up-js .primeiro conteúdo .segunda coluna {
+índice z: 11;
+}
+
+.sign-up-js .primeiro conteúdo .primeira coluna {
+índice z: 13;
+}
+
+/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
+.sign-in-js .first-content .second-column {
+
+z-index: -1;
+position: relative;
+animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+.sign-up-js .second-content .second-column {
+posição: relativa;
+índice z: -1;
+animação: deslocamentoDir 1.3s; / MODIFIQUEI DE 3s PARA 1.3s /
+}
